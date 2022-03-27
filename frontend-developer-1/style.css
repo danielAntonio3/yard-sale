@@ -103,11 +103,21 @@ body {
   .logo {
     display: block;
   }
+
   .secondary-button {
     width: 300px !important;
     position: absolute;
     bottom: 0;
     margin-bottom: 24px;
+  }
+
+  .account-container {
+    height: 100%;
+  }
+
+  .form-container-account {
+    height: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -190,6 +200,7 @@ body {
   padding: 6px;
   margin-top: 12px;
 }
+
 .input-email {
   margin-bottom: 22px;
 }
@@ -213,4 +224,52 @@ body {
   color: var(--hospital-green);
   cursor: pointer;
   width: 100%;
+}
+
+/* Fin de login */
+.account {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  /* Para centrar el contenido */
+  place-items: center;
+}
+
+.account-container {
+  display: grid;
+  /* Con esto estamos creando 3 filas */
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+}
+
+.form-container-account {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container-account div {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-account {
+  font-size: var(--lg);
+  text-align: start;
+  margin-bottom: 36px;
+}
+
+.input-name {
+  margin-bottom: 22px;
+}
+
+.save-button {
+  margin-bottom: 30px;
+}
+/* Fin de crear cuenta */
+
+/* Inicio de editar cuenta */
+.value {
+  color: var(--very-light-pink);
+  font-size: var(--md);
+  margin: 8px 0 32px 0;
 }
